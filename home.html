@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThyroPredict</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+    <script>
+        function redirectToBehindScenes() {
+            window.location.href = "{{ url_for('behind_scenes') }}";
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ThyroPredict</h1>
+            <p>Welcome to ThyroPredict, where your thyroid health predictions begin!</p>
+        </header>
+
+        <section class="about">
+            <h2>About the Project</h2>
+            <p>
+                ThyroPredict is a powerful tool designed to help predict thyroid-related conditions using  machine learning algorithms. By analyzing various medical parameters, our system can provide insights into potential thyroid issues, facilitating early diagnosis and treatment.
+            </p>
+        </section>
+
+        <section class="buttons">
+        <section class="buttons">
+            <button onclick="redirectToBehindScenes()">Explore The Project!</button>
+                
+
+           
+
+           
+        </section>
+    </div>
+</body>
+</html>
